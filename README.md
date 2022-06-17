@@ -1,5 +1,5 @@
 <div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJyS6XJWrRMBiTNWRUDo9vU1hIRxjfVkRMb2uCVQIQR76zrr_hRDcFz5_cTj44xF0i0g0&usqp=CAU" height="300" width=100%/>
+    <img src="https://cdn-media-1.freecodecamp.org/images/1*1Y1tyzaCXPtRNYPdbG0naA.png" height="380" width=100%/>
 </div>
 
 # Fulcro Development
