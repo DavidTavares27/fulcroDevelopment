@@ -1,0 +1,36 @@
+:root {
+  --white: ghostwhite;
+  --light-blue: aliceblue;
+  --accent: indigo;
+  --red: tomato;
+  --dark-red: crimson;
+  --lavender: lavender;
+}
+
+body {
+    background-color: var(--light-blue);
+    font-family: sans-serif;
+  }
+
+button {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    cursor: pointer;  
+    padding: 0.1rem 0.2rem;
+    font-family: "Poppins";
+    font-size: 1em;
+    border-radius: 10px;
+    transition: var(--hover-animation);
+    margin-left: 1rem;
+  }
+
+button:hover {
+    background-color: var(--dark-red);
+  }
+
+h4 {
+    font-family: "Poppins";
+    line-height: 0;
+    color: var(--accent);
+  }

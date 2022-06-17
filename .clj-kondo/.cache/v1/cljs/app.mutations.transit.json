@@ -1,0 +1,1 @@
+["^ ","~$delete-person",["^ ","~:row",null,"~:col",null,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$app.mutations","~:top-ns","^7"],"~:filename","/Users/david.tavares/Documents/FulcroDevelopment/src/main/app/mutations.cljs"]
