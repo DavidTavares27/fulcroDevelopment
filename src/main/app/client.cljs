@@ -22,3 +22,17 @@
 
 
 
+
+
+
+
+(comment
+  (defn soma [x y]
+    (if (= 0 x)
+      (+ x y)
+      1000))
+  (soma 1 2))
+
+
+
+

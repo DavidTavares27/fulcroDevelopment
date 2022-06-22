@@ -4,6 +4,24 @@
    [com.fulcrologic.fulcro.dom :as dom]
    [app.mutations :as api]))
 
+(defsc Pokemon [this {:pokemon/keys [name url]}]
+  {:query [:pokemon/name :pokemon/url]
+   :ident  :pokemon/name}
+  (dom/div
+   (dom/h2 name)
+   (dom/a {:href url} "detalhes")))
+
+(def ui-pokemon (comp/factory Pokemon {:keyfn :pokemon/name}))
+
+(defsc PokemonList [this list]
+  {:query [{:pokemons/list (comp/get-query Pokemon)}]})
+
+
+
+
+
+
+
 (defsc Person [this {:person/keys [id name age] :as props} {:keys [onDelete]}]
   {:query         [:person/id :person/name :person/age]
    :ident         :person/id
@@ -11,7 +29,7 @@
   (dom/li
    (dom/h5 (str name " (idade: " age ")") (dom/button {:onClick #(onDelete id)} "Excluir"))))
 
-(def ui-person (comp/factory Person (:keyfn :person/id)))
+(def ui-person (comp/factory Person {:keyfn :person/id}))
 
 (defsc PersonList [this {:list/keys [id label people] :as props}] 
   {:query [:list/id :list/label {:list/people (comp/get-query Person)}]
